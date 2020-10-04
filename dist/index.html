@@ -4,37 +4,67 @@
 <head>
   <title>devfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% comment %} <link rel="icon" href="favicon.png" type="image/x-icon"> {% endcomment %}
+  <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
 </head>
 
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
 <body>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+
     <div class="navbar-brand">
+      <!--
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+        <a href="https://github.com/rhklite" class="icon is-medium has-text-light">
           <i class="fab fa-2x fa-github"></i>
         </a>
       </div>
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-          <i class="fas fa-2x fa-globe"></i>
+        <a href="https://rhklite.github.io/" class="icon is-medium has-text-light">
+          <i class="fas fa-2x fa-home"></i>
         </a>
       </div>
+      -->
     </div>
     <div class="navbar-menu">
-      <div class="navbar-end">
+      <div class="navbar-start">
+
         <div class="navbar-item">
-          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
-            <i class="fab fa-2x fa-github"></i>
+          <a href="#about-me" class="has-text-white">
+            <strong> About Me </strong>
           </a>
         </div>
+
         <div class="navbar-item">
-          <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-            <i class="fas fa-2x fa-globe"></i>
+          <a href="#experience" class="has-text-white">
+            <strong> Experience </strong>
           </a>
         </div>
+
+        <div class="navbar-item">
+          <a href="#projects" class="has-text-white">
+            <strong> Project </strong>
+          </a>
+        </div>
+        
+        <div class="navbar-item">
+          <a href="#education" class="has-text-white">
+            <strong> Education </strong>
+          </a>
+        </div>
+        
+        <div class="navbar-item">
+          <a href="#contact" class="has-text-white">
+            <strong> Contact </strong>
+          </a>
+        </div>
+
       </div>
     </div>
   </nav>
@@ -52,14 +82,14 @@
         <div class="columns has-text-centered">
           <div class="column">
             <h1 class="title is-1">
-              Mark Macneil
+              Richard Hu
             </h1>
             <h2 class="subtitle">
-              FullStack .NET Dev, Halifax, NS
+              Robotics &nbsp&nbsp⚫&nbsp&nbsp Autonmous Driving &nbsp&nbsp⚫&nbsp&nbsp Artifical Intelligence
             </h2>
             <p>
-              <a href="docs/resume.txt" class="icon has-text-light">
-                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              <a href="docs/resume.pdf" class="icon has-text-light">
+                <i class="fas fa-file-pdf"></i> <strong> &nbspResume</strong>
               </a>
             </p>
           </div>
@@ -68,13 +98,20 @@
     </div>
   </section>
 
+
+  <a id="about-me"></a>
   <section class="section">
     <div class="container">
+    
       <h1 class="title">About Me</h1>
       <hr />
-      <p>hello world</p>
+      <p>hello world =]
+      I haven't decided what to write just yet.</p>
     </div>
   </section>
+
+
+  <a id="experience"></a>
   <section class="section">
     <div class="container">
       <h1 class="title">Experience</h1>
@@ -146,6 +183,8 @@
     </div>
   </section>
 
+
+  <a id="projects"></a>
   <section class="section">
     <div class="container">
       <h1 class="title">Projects</h1>
@@ -213,9 +252,11 @@
     </div>
   </section>
 
+
+  <a id="education"></a>
   <section class="section">
     <div class="container">
-      <h1 class="title">Education / Training</h1>
+      <h1 class="title">Education</h1>
       <hr />
       <div class="card">
         <div class="card-content">
@@ -254,6 +295,8 @@
     </div>
   </section>
 
+
+  <a id="contact"></a>
   <section class="section">
     <div class="container">
       <h1 class="title">Contact</h1>
@@ -261,34 +304,34 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://github.com/mmacneil" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
+            <a href="https://github.com/rhklite" class="icon is-large">
+              <i class="fab fa-2x fa-github-square"></i>
             </a>
-            <p class="heading"><a href="https://github.com/mmacneil">github.com/mmacneil</a></p>
+            <p class="heading"><a href="https://github.com/rhklite">github.com/rhklite</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://fullstackmark.com" class="icon is-large">
-              <i class="fas fa-2x fa-globe"></i>
+            <a href="https://rhklite.github.io/" class="icon is-large">
+              <i class="fas fa-2x fa-home"></i>
             </a>
-            <p class="heading"><a href="https://fullstackmark.com">fullstackmark.com</a></p>
+            <p class="heading"><a href="https://rhklite.github.io/">rhklite.github.io/</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="mailto:markmacneil@gmail.com" class="icon is-large">
+            <a href="mailto:richie.hu@mail.utoronto.ca" class="icon is-large">
               <i class="fas fa-2x fa-envelope"></i>
             </a>
-            <p class="heading"><a href="mailto:markmacneil@gmail.com">markmacneil@gmail.com</a></p>
+            <p class="heading"><a href="mailto:richie.hu@mail.utoronto.ca.com">richie.hu@mail.utoronto.ca</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://www.linkedin.com/in/markmacneilhfx" class="icon is-large">
-              <i class="fab fa-2x fa-linkedin-in"></i>
+            <a href="www.linkedin.com/in/richard-han-hu" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin"></i>
             </a>
-            <p class="heading"><a href="https://www.linkedin.com/in/markmacneilhfx">linkedin</a></p>
+            <p class="heading"><a href="www.linkedin.com/in/richard-han-hu">linkedin</a></p>
           </div>
         </div>
       </nav>
@@ -307,7 +350,7 @@
 
         <div id="project-1-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/carousel/1.gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
             <img src="img/carousel/2.png">

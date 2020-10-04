@@ -1,0 +1,47 @@
+[
+	{
+		"path": "$ROOTPATH$/dist/index.html",
+		"bookmarks": [
+			{
+				"line": 17,
+				"column": 6,
+				"label": "navbar"
+			},
+			{
+				"line": 71,
+				"column": 9,
+				"label": "header"
+			},
+			{
+				"line": 101,
+				"column": 6,
+				"label": "about me"
+			},
+			{
+				"line": 113,
+				"column": 14,
+				"label": "experience"
+			},
+			{
+				"line": 186,
+				"column": 12,
+				"label": "project"
+			},
+			{
+				"line": 255,
+				"column": 13,
+				"label": "education"
+			},
+			{
+				"line": 298,
+				"column": 12,
+				"label": "contact"
+			},
+			{
+				"line": 341,
+				"column": 18,
+				"label": "proj details"
+			}
+		]
+	}
+]
