@@ -8,37 +8,37 @@
 				"label": "navbar"
 			},
 			{
-				"line": 71,
+				"line": 101,
 				"column": 9,
 				"label": "header"
 			},
 			{
-				"line": 101,
+				"line": 131,
 				"column": 6,
 				"label": "about me"
 			},
 			{
-				"line": 113,
+				"line": 143,
 				"column": 14,
 				"label": "experience"
 			},
 			{
-				"line": 186,
+				"line": 216,
 				"column": 12,
 				"label": "project"
 			},
 			{
-				"line": 255,
+				"line": 285,
 				"column": 13,
 				"label": "education"
 			},
 			{
-				"line": 298,
+				"line": 328,
 				"column": 12,
 				"label": "contact"
 			},
 			{
-				"line": 341,
+				"line": 371,
 				"column": 18,
 				"label": "proj details"
 			}
