@@ -6425,6 +6425,9 @@ a.navbar-item:hover {
   .navbar.is-spaced a.navbar-item {
     border-radius: 4px;
   }
+  .navbar.is-transparent {
+    background-color: transparent;
+  }
   .navbar.is-transparent .navbar-link.is-active,
   .navbar.is-transparent .navbar-link:focus,
   .navbar.is-transparent .navbar-link:hover,
