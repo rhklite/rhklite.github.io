@@ -7,33 +7,69 @@
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+
+  <script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }
+  </script>
+
 </head>
 
 <style>
 html {
   scroll-behavior: smooth;
 }
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/cover/cover2.png");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  min-height: 500px;
+  max-height: 1080px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.img-caption
+{
+  position:relative;
+  height: 0px;
+  width: 180px;
+  top: -24px;
+    color:#fff;
+    font-size:12pt;
+    background-color: rgba(0, 0, 0, .4);
+    text-align:center;
+}
 </style>
 
 <body>
 
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+
+  <section class="hero-image is-primary">
+  
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
 
 
     <div class="navbar-brand">
 
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-    </div>
+    <!--
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    -->
+    </div> 
 
     <div class="navbar-menu">
-      <div class="navbar-end">
+      <div class="navbar-start">
 
-        <div class="navbar-item">
+        <div class="navbar-item ">
           <a href="#about-me" class="has-text-white">
             <strong> About Me </strong>
           </a>
@@ -66,23 +102,22 @@ html {
       
     </div>
   </nav>
-
-  <section class="hero is-primary">
+  
     <div class="hero-body">
       <div class="container">
         <div class="level">
           <div class="level-item has-text-centered">
             <figure class="image is-128x128">
-              <img class="is-full" src="img/me.png">
+              <img class="is-full" src="assets/me.png">
             </figure>
           </div>
         </div>
         <div class="columns has-text-centered">
           <div class="column">
-            <h1 class="title is-1">
+            <h1 class="title is-1 has-text-light">
               Richard Hu
             </h1>
-            <h2 class="subtitle">
+            <h2 class="subtitle has-text-light">
               Robotics &nbsp &bull; &nbsp Autonmous Driving &nbsp &bull; &nbsp Artifical Intelligence
             </h2>
             <p>
@@ -90,11 +125,17 @@ html {
                 <i class="fas fa-file-pdf"></i> <strong> &nbspResume</strong>
               </a>
             </p>
+
           </div>
+          
         </div>
       </div>
     </div>
+
+    
   </section>
+
+  
 
 
   <a id="about-me"></a>
@@ -114,70 +155,174 @@ html {
     <div class="container">
       <h1 class="title">Experience</h1>
       <hr />
+
       <div class="card">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/dunder-mifflin-logo.png" alt="Placeholder image">
+                <img src="assets/logo/huawei_logo.png" alt="Huawei">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">January 2018</time> - <time
-                  datetime="2019-9">Sepemter 2019</time> </p>
+              <p class="title is-4">Huawei Noah's Ark Lab - Planning Team</p>
+              <p class="subtitle is-6">Support Researcher - <time datetime="2020-5">May. 2020</time> - <time
+                  datetime="Present">Present</time> </p>
             </div>
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+            <p>To Develop, implement, and test solutions for motion planning and control of autonomous vehicles. </p>
             <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
+              <li><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</li>
             </ul>
             <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+              <span class="tag">Python</span>
             </div>
           </div>
         </div>
       </div>
+
       <div class="card card-gap">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/pied-piper-logo.png" alt="Placeholder image">
+                <img src="assets/logo/asblab_logo.png" alt="ASB Lab">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">August 2017</time> - <time
-                  datetime="2017-9">January 2018</time></p>
+              <p class="title is-4">Autonomous Systems and Biomechatronics Lab</p>
+              <p class="subtitle is-6">MASc Student - <time datetime="2018-9">Sep. 2018</time> - <time
+                  datetime="Present">Present</time> </p>
             </div>
           </div>
           <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
             <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
+              <li><strong>Autonomy</strong> Designed a mobile robot platform for urban search and rescue in ROS and C++</li>
+              <li><strong>Machine Learning</strong> Developed a deep reinforcement learning network and virtual-to-real transfer pipeline in Pytorch</li>
+              <li><strong>Localization</strong> Implemented lidar and vision based SLAM for real time pose estimation</li>
+              <li><strong>Control</strong> Optimized a robust motion controller for rough terrain navigation</li>
+              <li><strong>Hardware</strong> Enhanced a robot with auxilliary computing units and sensors with components designed using SolidWorks</li>
+              <li><strong>Deployment</strong> In house system level testing with autonomous point to point navigation</li>
+              
             </ul>
             <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+              <span class="tag">ROS</span>
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">Pytorch</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">Control</span>
+              <span class="tag">Reinforcement Learning</span>
             </div>
           </div>
         </div>
       </div>
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="assets/logo/WERL_logo.png" alt="WERL">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Water and Energy Research Lab</p>
+              <p class="subtitle is-6">Researcher - <time datetime="2018-1">Jan. 2018</time> - <time
+                  datetime="2018-9">Sep. 2018</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p> -->
+            <ul>
+              <li><strong>Mechanical</strong> Designed a variable guide vane for pico-scale hydro turbine using Solidworks and evaluated its failure mode with FEA</li>
+              <li><strong>Prototype</strong> Prototyped the pico-scale turbine using SLA 3D printing and built a pressurized pipeline test rig</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">SolidWorks</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Machining</span>
+              <span class="tag">Finite Element Analysis</span>
+              <span class="tag">Fluid Mechanics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="assets/logo/conavi_logo.png" alt="conavi medical">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Conavi Medical - Novasight Hybrid System</p>
+              <p class="subtitle is-6">Mechanical Engineer Intern - <time datetime="2018-1">May. 2016</time> - <time
+                  datetime="2017-9">Aug. 2017</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Research and development of the Novasight Hybrid System; an intravascular catheter invention that combines ultrasound and optical coherent homography.</p>
+            <ul>
+              <li><strong>Research</strong> Investigated potential design hazards and risks of catheter rotary assembly</li>
+              <li><strong>Manufacturing</strong> Streamlined an efficient assembly and calibration work instruction</li>
+              <li><strong>Organization</strong> Established an inventory system with full traceability for FDA 510k submission validation</li>
+              <li><strong>Project Management</strong> Directed technical design reviews with senior leadership; accelerated the exit of the project phase</li>
+              <li><strong>Design</strong> Designed imaging and rotary assembly for a intravascular catheter using MATLAB and SolidWorks</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">SolidWorks</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Manufacturing</span>
+              <span class="tag">Mechanical Design</span>
+              <span class="tag">GD&T</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="assets/logo/uoft_logo.png" alt="uoft">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Multiphase Flow and Spray Systems Lab</p>
+              <p class="subtitle is-6">Researcher - <time datetime="2018-1">May. 2016</time> - <time
+                  datetime="2017-9">Aug. 2017</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Droplet impingement research to study the shattering mechanics of water droplet under high speed air jet.</p>
+
+            <ul>
+              <li><strong>Design</strong> Developed automated system using microcontrollers that increased experiment efficienty by 85%</li>
+               <li><strong>Analysis</strong> Performed in depth qualitative and quantitative analysis of the datum using fluid mechanics theory</li>
+              <li><strong>Research</strong> Discovered and classified 13 droplet shattering phenomena based on 4000 image data points</li>
+
+            </ul>
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">Fluid Mechanics</span>
+              <span class="tag">Mechanical Design</span>
+              <span class="tag">Minitab</span>
+              <span class="tag">ImageJ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -187,30 +332,55 @@ html {
     <div class="container">
       <h1 class="title">Projects</h1>
       <hr />
+
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">Deep Reinforcement Learning for Rough Terrain</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-1-modal" src="assets/drl_rough_terrain_nav/cover.jpg">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Droplet Shattering Pattern</p>
                 <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
+                  <img class="modal-trigger" data-target="project-1-modal" src="assets/project-1-cover.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Data Analytics Pipeline</p>
+                <figure class="image is-3by2">
+                  <img class="modal-trigger" data-target="project-1-modal" src="assets/project-1-cover.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">aUToronto</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                  <img class="modal-trigger" data-target="project-2-modal" src="assets/project-2-cover.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">Toward Smart Cities: Road Accident Prevention</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                  <img class="modal-trigger" data-target="project-3-modal" src="assets/project-3-cover.png">
                 </figure>
               </article>
             </div>
@@ -222,25 +392,56 @@ html {
           <div class="tile">
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">Autonomous Turtlebot Navigation</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
+                  <img class="modal-trigger" data-target="project-4-modal" src="assets/project-4-cover.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">Autonomous Maze Navigation Rover</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
+                  <img class="modal-trigger" data-target="project-5-modal" src="assets/project-5-cover.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">Pico-Scale Hydro Turbine</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
+                  <img class="modal-trigger" data-target="project-6-modal" src="assets/project-6-cover.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Open Architecture Quadcopter Design</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-4-modal" src="assets/project-4-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Parallel Agent Proximal Policy Gradient</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-5-modal" src="assets/project-5-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Apprenticeship Inverse Rinforcement Learning</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-6-modal" src="assets/project-6-cover.png">
                 </figure>
               </article>
             </div>
@@ -248,6 +449,8 @@ html {
         </div>
       </div>
     </div>
+
+
   </section>
 
 
@@ -258,34 +461,49 @@ html {
       <hr />
       <div class="card">
         <div class="card-content">
-          <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2016-9">September 2016</time> - <time
-                datetime="2019-9">Sepemter 2019</time></p>
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="assets/logo/uoft_logo.png" alt="uoft">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">University of Toronto</p>
+              <p class="subtitle is-6">Master of Applied Science, Mechanical Engineering - <time datetime="2018-9">Sep. 2018</time> - <time
+                  datetime="present">Expected Sep. 2020</time></p>
+            </div>
           </div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
+            <strong>Specialization</strong> Deep Reinforcement Learning, Machine Learning, Mobile Robotics
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>GPA (4.00/4.00)</li>
+              <li><strong>2018 - Present</strong> University Of Toronto Fellowship</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="card card-gap">
         <div class="card-content">
-          <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2015-9">September 2014</time> - <time
-                datetime="2015-9">Sepemter 2015</time></p>
+
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="assets/logo/uoft_logo.png" alt="uoft">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">University of Toronto</p>
+              <p class="subtitle is-6">Bachelor of Applied Science, Mechanical Engineering - <time datetime="2013-9">Sep. 2013</time> - <time
+                  datetime="2018-4">Apr. 2018</time></p>
+            </div>
           </div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
+            <strong>Specialization</strong> Robotics and Mechatronics Minor. Graduated with Honors
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>GPA (3.81/4.00)</li>
+              <li><strong>All terms</strong> Dean's Honor List</li>
+              <li><strong>2015</strong> University of Toronto Excellence Award</li>
+              <li><strong>2015</strong> Shell Canada Limited Engineering Scholarship</li>
             </ul>
           </div>
         </div>
@@ -326,10 +544,10 @@ html {
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="www.linkedin.com/in/richard-han-hu" class="icon is-large">
+            <a href="https://www.linkedin.com/in/richard-han-hu" class="icon is-large">
               <i class="fab fa-2x fa-linkedin"></i>
             </a>
-            <p class="heading"><a href="www.linkedin.com/in/richard-han-hu">linkedin</a></p>
+            <p class="heading"><a href="https://www.linkedin.com/in/richard-han-hu">linkedin</a></p>
           </div>
         </div>
       </nav>
@@ -341,36 +559,43 @@ html {
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Deep Reinforcement Learning for Rough Terrain</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
         <div id="project-1-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.gif">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <video width="1080" height="720" controls>
+            <source src="assets/drl_rough_terrain_nav/submission_vid.mp4" type="video/mp4">
+            <figcaption class="demo-photo-caption">Sad Fingers</figcaption>
+          </video>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="assets/drl_rough_terrain_nav/cover.jpg" alt="alternate text">
+            <figcaption class="img-caption">Jaguar 4x4 Robot</figcaption>
           </figure>
         </div>
 
         <div class="content">
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+ 
+          <p class="title is-4">Autonomous Systems and Biomechatronics Lab</p>
+          <p class="subtitle is-6">MASc Student - <time datetime="2018-9">Sep. 2018</time> - <time
+              datetime="Present">Present</time> </p>
+          <p>This project developed a novel sim-to-real pipeline that allows a mobile robot to effectively learn how to safety navigate real-world 3D rough terrain environments using a unique combination of strategies to directly address the reality gap for such environments. The pipeline uses Asynchronous Advantage Actor Critic (A3C) to learn a navigation policy from training data obtained from the simulated environment.</p>
+          
+          <p>Experiments in the real-world 3D cluttered environment verified that the robot was able to successfully navigate from numerous arbitrary starting locations to numerous arbitrary goal locations while effectively traversing the rough terrain.</p>
+
+          <p>Paper in progress.</p>
 
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+              <span class="tag">ROS</span>
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">Pytorch</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">Control</span>
+              <span class="tag">Reinforcement Learning</span>
           </div>
 
         </div>
@@ -393,18 +618,21 @@ html {
 
         <div id="project-2-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="assets/carousel/1.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="assets/carousel/2.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="assets/carousel/3.png">
           </figure>
         </div>
 
         <div class="content">
 
+          <p class="title is-4">Autonomous Systems and Biomechatronics Lab</p>
+          <p class="subtitle is-6">MASc Student - <time datetime="2018-9">Sep. 2018</time> - <time
+              datetime="Present">Present</time> </p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -437,13 +665,13 @@ html {
       <section class="modal-card-body">
         <div id="project-3-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="assets/carousel/1.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="assets/carousel/2.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="assets/carousel/3.png">
           </figure>
         </div>
 
@@ -478,13 +706,13 @@ html {
       <section class="modal-card-body">
         <div id="project-4-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="assets/carousel/1.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="assets/carousel/2.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="assets/carousel/3.png">
           </figure>
         </div>
 
@@ -519,13 +747,13 @@ html {
       <section class="modal-card-body">
         <div id="project-5-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="assets/carousel/1.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="assets/carousel/2.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="assets/carousel/3.png">
           </figure>
         </div>
 
@@ -560,13 +788,13 @@ html {
       <section class="modal-card-body">
         <div id="project-6-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="assets/carousel/1.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="assets/carousel/2.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="assets/carousel/3.png">
           </figure>
         </div>
 
@@ -601,6 +829,7 @@ html {
   </footer>
 
   <script src="js/bundle.js"></script>
+  <script src="js/bulma.js"></script>
 </body>
 
 </html>

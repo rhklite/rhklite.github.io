@@ -1,2 +1,5 @@
+.vscode
 node_modules/
-.vscode/
+dist/assets/drl_rough_terrain_nav/velodyne_map.mp4
+dist/assets/drl_rough_terrain_nav/submission_vid.gif
+.git/objects/pack/pack-98c9b5e726332065931cf251cadadb5f19e07233.pack
