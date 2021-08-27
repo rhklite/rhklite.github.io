@@ -11,6 +11,7 @@
         document.getElementById("demo").innerHTML = "Paragraph changed.";
       }
     </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
   <style>
@@ -39,9 +40,11 @@
       top: -24px;
       color: #fff;
       font-size: 12pt;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0);
       text-align: center;
     }
+  
+
   </style>
 
   <body>
@@ -93,6 +96,14 @@
               </a>
             </div>
           </div>
+          <div class="navbar-end">
+
+            <div class="navbar-item">
+              <a href="https://rhklite.github.io/blog/" class="has-text-white" target="_blank">
+                <strong> Blog </strong>
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
 
@@ -114,10 +125,12 @@
               </h2>
               <p>
                 <a
-                  href="https://docs.google.com/viewer?url=https://github.com/rhklite/resume/raw/master/cv.pdf"
+                
+                  href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
                   target="_blank"
                   class="icon has-text-light"
                 >
+
                   <i class="fas fa-file-pdf"></i> <strong> &nbspCurriculum&nbspVitae</strong>
                 </a>
               </p>
@@ -257,7 +270,7 @@
             </div>
 
 
-            <!--description-->
+            <!--sim2rl-->
             <div class="content">
               <p>
                 Sim-to-real transfer for deep reinforcement learning with application to rough terrain navigation of wheeled robots.
@@ -561,6 +574,7 @@
       </div>
     </section>
 
+    <!--Projects-->
     <a id="projects"></a>
     <section class="section">
       <div class="container">
@@ -577,6 +591,7 @@
                   <p class="title is-4">Spatial Constraint Generation for Self Driving</p>
 
                   <figure class="image is-16by3">
+                  
                     <img
                       class="modal-trigger"
                       data-target="blank_project"
@@ -586,6 +601,7 @@
                 </article>
               </div>
 
+              <!--sim2rl Project-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Deep Reinforcement Learning Rough Terrain Navigation</p>
@@ -600,6 +616,7 @@
                 </article>
               </div>
 
+              <!--parallel ppo project-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Parallel Proximal Policy Optimization</p>
@@ -623,6 +640,9 @@
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
+
+
+              <!--Apprenticeship project-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">Apprenticeship Inverse RL</p>
@@ -635,18 +655,26 @@
                   </figure>
                 </article>
               </div>
+
+
+              <!--traffic accident prediction-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">Road Accident Prevention</p>
-                  <figure class="image is-4by3">
+                  <div style="text-align: center;">
+                  <figure class="image is-16by9" >
+                  
                     <img
                       class="modal-trigger"
                       data-target="project-4-modal"
-                      src="assets/toward_smart_city/logo_pad.png"
+                      src="assets/toward_smart_city/process.png"
                     />
                   </figure>
+                    </div>
                 </article>
               </div>
+
+              <!--autoronto-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">aUToronto</p>
@@ -665,6 +693,8 @@
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
+
+              <!--data analytics project-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">Data Analytics Pipeline</p>
@@ -677,6 +707,8 @@
                   </figure>
                 </article>
               </div>
+
+              <!--autonmous maze robot-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">Autonomous Maze Rover</p>
@@ -689,6 +721,8 @@
                   </figure>
                 </article>
               </div>
+
+              <!--pico scale turbine-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">Pico-Scale Turbine</p>
@@ -705,6 +739,7 @@
           </div>
         </div>
 
+        <!--turtlebot project-->
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
@@ -720,6 +755,8 @@
                   </figure>
                 </article>
               </div>
+
+              <!--droplet shatter project-->
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title">Droplet Shatter Pattern</p>
@@ -756,7 +793,7 @@
                 <p class="subtitle is-6">
                   Master of Applied Science, Mechanical Engineering -
                   <time datetime="2018-9">Sep. 2018</time> -
-                  <time datetime="present">Expected Sep. 2020</time>
+                  <time datetime="present">Expected Sep. 2021</time>
                 </p>
               </div>
             </div>
@@ -867,7 +904,9 @@
       </div>
     </section>
 
-    <!-- Modals -->
+    <!-- carousel -->
+
+    <!--sim2rl carousel-->
     <div id="project-1-modal" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
@@ -1077,6 +1116,13 @@
                   <i class="fab fa-github"></i>
                   <strong>Project&nbspLink</strong></a
                 >
+                  <span style="padding-left:75px"/>
+
+                <a href="https://colab.research.google.com/drive/1Tmc5fPHP9J0s-vQukLDzRywe47BNni37#scrollTo=bzxZCx5VD3xn" 
+                  target="_blank">
+                  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+                </a>
+
               </p>
             </div>
 
