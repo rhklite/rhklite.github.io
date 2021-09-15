@@ -1,6 +1,7 @@
 # rhklite.github.io
 portfolio
 
+- do not add the assets to lfs, it won't render properly on the webpage.
 - there is are some manual changes made to the [`main.bundle.css`](dist/css/main.bundle.css). Please keep it to avoid missing/bad assets.
 - view [`index.html`](dist/index.html) locally in the browser 
 
