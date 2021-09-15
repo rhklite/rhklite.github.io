@@ -4,6 +4,7 @@
     <title>Richard Hu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.bundle.css" />
     <script src="https://kit.fontawesome.com/4e5a72c756.js"
     <script>
@@ -12,15 +13,20 @@
       }
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
   </head>
 
+
+<!-- scripts -->
   <style>
     html {
       scroll-behavior: smooth;
     }
+    
     .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("assets/cover/cover2.png");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/cover/cover.png");
+      background-color: #14004F; 
       height: 50vh;
       background-position: center;
       background-repeat: no-repeat;
@@ -48,74 +54,77 @@
   </style>
 
   <body>
+
     <section class="hero-image is-primary">
-      <nav
-        class="navbar is-transparent"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <!--
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    -->
-        </div>
 
-        <div class="navbar-menu">
-          <div class="navbar-start">
-            <div class="navbar-item">
-              <a href="#about-me" class="has-text-white">
-                <strong> About Me </strong>
-              </a>
+          <nav
+            class="navbar is-transparent"
+            role="navigation"
+            aria-label="main navigation"
+          >
+            <div class="navbar-brand">
+              <!--
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        -->
             </div>
 
-            <div class="navbar-item">
-              <a href="#experience" class="has-text-white">
-                <strong> Experience </strong>
-              </a>
+            <div class="navbar-menu">
+              <div class="navbar-start">
+
+                <div class="navbar-item">
+                  <a href="#about-me" class="has-text-white">
+                    <strong> About Me </strong>
+                  </a>
+                </div>
+
+                <div class="navbar-item">
+                  <a href="#experience" class="has-text-white">
+                    <strong> Experience </strong>
+                  </a>
+                </div>
+
+                <div class="navbar-item">
+                  <a href="#projects" class="has-text-white">
+                    <strong> Project </strong>
+                  </a>
+                </div>
+
+                <div class="navbar-item">
+                  <a href="#education" class="has-text-white">
+                    <strong> Education </strong>
+                  </a>
+                </div>
+
+                <div class="navbar-item">
+                  <a href="#contact" class="has-text-white">
+                    <strong> Contact </strong>
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-end">
+
+                <div class="navbar-item">
+                  <a href="https://rhklite.github.io/blog/" class="has-text-white" target="_blank">
+                    <strong> Blog </strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="hero-container">
+            <div class="level">
+              <div class="level-item has-text-centered is-front">
+                <figure class="image is-128x128">
+                  <img class="is-full" src="assets/me.png" />
+                </figure>
+              </div>
             </div>
 
-            <div class="navbar-item">
-              <a href="#projects" class="has-text-white">
-                <strong> Project </strong>
-              </a>
-            </div>
-
-            <div class="navbar-item">
-              <a href="#education" class="has-text-white">
-                <strong> Education </strong>
-              </a>
-            </div>
-
-            <div class="navbar-item">
-              <a href="#contact" class="has-text-white">
-                <strong> Contact </strong>
-              </a>
-            </div>
-          </div>
-          <div class="navbar-end">
-
-            <div class="navbar-item">
-              <a href="https://rhklite.github.io/blog/" class="has-text-white" target="_blank">
-                <strong> Blog </strong>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="hero-body">
-        <div class="container">
-          <div class="level">
-            <div class="level-item has-text-centered">
-              <figure class="image is-128x128">
-                <img class="is-full" src="assets/me.png" />
-              </figure>
-            </div>
-          </div>
           <div class="columns has-text-centered">
             <div class="column">
               <h1 class="title is-1 has-text-light">Richard Hu</h1>
@@ -123,7 +132,9 @@
                 Robotics &nbsp &bull; &nbsp Autonmous Driving &nbsp &bull; &nbsp
                 Artifical Intelligence
               </h2>
-              <p>
+              
+                <!--
+                <p>
                 <a
                 
                   href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
@@ -134,10 +145,30 @@
                   <i class="fas fa-file-pdf"></i> <strong> &nbspCurriculum&nbspVitae</strong>
                 </a>
               </p>
+              -->
             </div>
           </div>
-        </div>
-      </div>
+          </div>
+
+
+            <div class="column is-front has-text-centered is-center is-positioned ">
+            <a
+            
+              href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
+              target="_blank"
+              class="icon has-text-light is-front"
+            >
+
+              <i class="fas fa-file-pdf"></i> <strong> &nbspCurriculum&nbspVitae</strong>
+            </a>
+            </div>
+
+
+      <div id="particles-js"></div>
+      <script src="js/particles.js"></script>
+      <script src="js/app.js"></script>
+      
+
     </section>
 
     <a id="about-me"></a>
