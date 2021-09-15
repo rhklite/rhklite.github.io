@@ -14,3 +14,10 @@ portfolio
 - The tags should be organized as hard-skills, soft skills
 - The keyword tags should incidate **hard skills** and **soft skills** used in that job.
 - [RAL Keywords](https://www.ieee-ras.org/publications/ra-l/ra-letters-information-for-authors/184-publications/ra-letters/629-ra-l-keywords#subject)
+
+## TODO
+
+- [ ] close drop down menu when clicking on blank space
+- [ ] show drop down menu when resized window on non-mobile site
+- [ ] animate drop down menu icon after it's clicked
+- [ ] reveal nav bar when scrolling back up

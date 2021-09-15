@@ -11,15 +11,8 @@
       function myFunction() {
         document.getElementById("demo").innerHTML = "Paragraph changed.";
       }
-
-      const toggleBurger = () => {
-        let burgerIcon = document.getElementById('burger');
-        let dropMenu = document.getElementById('teamList');
-        burgerIcon.classList.toggle('is-active');
-        dropMenu.classList.toggle('is-active');
-      };
-
     </script>
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
@@ -70,8 +63,20 @@
             role="navigation"
             aria-label="main navigation"
           >
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <a class="navbar-burger is-front" id="burger">
+            <span class="has-text-white"></span>
+            <span class="has-text-white" onclick="openNav();"></span>
+            <span class="has-text-white"></span>
+          </a>
+
+          <!--<div class="is-front" id="toggle"></div>-->
+
+
+          <div class="sidenav" id="mySidenav">
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+            <a href="">
+            </a>
             <a href="#about-me" class="has-text-white" onclick="closeNav()">
               <strong> About Me </strong>
             </a>
@@ -99,12 +104,6 @@
 
           <!-- Use any element to open the sidenav -->
 
-
-            <a class="navbar-burger" id="burger">
-              <span class="has-text-white"></span>
-              <span class="has-text-white" onclick="openNav()"></span>
-              <span class="has-text-white"></span>
-            </a>
 
             <div id="navMenu" class="navbar-menu">
               <div class="navbar-start">
