@@ -19,5 +19,4 @@ portfolio
 ## TODO
 
 - [ ] close drop down menu when clicking on blank space
-- [ ] show drop down menu when resized window on non-mobile site
 - [ ] reveal nav bar when scrolling back up
