@@ -19,5 +19,4 @@ portfolio
 
 - [ ] close drop down menu when clicking on blank space
 - [ ] show drop down menu when resized window on non-mobile site
-- [ ] animate drop down menu icon after it's clicked
 - [ ] reveal nav bar when scrolling back up
