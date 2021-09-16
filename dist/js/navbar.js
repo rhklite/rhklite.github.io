@@ -31,7 +31,6 @@ function toggleBurger(){
 // hide/revel navbar on scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  closeNav();
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "15px";
@@ -39,6 +38,10 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
+
+  if(sideBarOpen){
+    closeNav();
+  }
 }
 
 document.onclick=function(event){
