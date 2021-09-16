@@ -9101,6 +9101,7 @@ label.panel-block:hover {
 .section {
   padding: 3rem 1.5rem;
 }
+
 @media screen and (min-width: 1024px) {
   .section.is-medium {
     padding: 9rem 1.5rem;
@@ -9132,26 +9133,6 @@ label.panel-block:hover {
   /* background-color: #ffffff; */
 }
 
-.is-front{
-  z-index:2;
-}
-
-.is-white{
-  background-color: #ffffff;
-}
-
-.is-center{
-  width: 10%;
-  position: relative;
-  top: 70%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-.is-short{
-  width: 50%;
-}
 
 /* The side navigation menu */
 .sidenav {
@@ -9204,3 +9185,48 @@ label.panel-block:hover {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+/* richard's custom css */
+.is-front{
+  z-index:2;
+}
+
+.is-white{
+  background-color: #ffffff;
+}
+
+.is-center{
+  width: 10%;
+  position: relative;
+  top: 70%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.is-short{
+  width: 50%;
+}
+
+.can-hide{
+  width: 100%;
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  margin-left:-15px; 
+  margin-right:-15px; 
+  margin-bottom:-15px; 
+  margin-top:-15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pad-verticle{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pad-left{
+  margin-left: 15px;
+}
+

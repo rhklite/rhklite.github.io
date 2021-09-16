@@ -17,6 +17,3 @@ portfolio
 - [RAL Keywords](https://www.ieee-ras.org/publications/ra-l/ra-letters-information-for-authors/184-publications/ra-letters/629-ra-l-keywords#subject)
 
 ## TODO
-
-- [ ] close drop down menu when clicking on blank space
-- [ ] reveal nav bar when scrolling back up
