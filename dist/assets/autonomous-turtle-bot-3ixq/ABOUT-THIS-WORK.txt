@@ -1,0 +1,41 @@
+Title: Autonomous Turtle Bot
+
+Description:
+Project DescriptionThis project was a 5 member team for the Mechatronics Systems: Design and Integration course from Jan 2018 to April 2018. 
+
+The project focuses on practical know-how of robot intelligence control integration using the Robot Operating System (ROS) framwork. The project consists of 3 contests, each with a different set of challenges. 
+
+Contest 1: Autonomous Mapping and Exploration of an Unknown EnvironmentThe goal of this contest is to use the TurtleBot to autonomously explore an unknown environment while map this environment using sensory feedback from the a Kinect sensor using the Gmapping library. 
+
+Contest 2: Finding Objects of Interest in an EnvironmentThe goal is to navigate through a known environment and identify the image tags on five boxes using OpenCV Features 2D + Homography to find a known object. There will be three distinct images, one duplicate image, and a blank. The TurtleBot needs to be able to correctly localize within the map using Adaptive Monte Carlo Localization, move to prescribed positions, and identify the images on the boxes correctly. 
+
+Contest 3: Follow Me TurtleBot CompanionThe goal of this contest is to develop a TurtleBot that can follow a person and exhibiting emotional responses to external stimuli. The TurtleBot reacts to environmental stimuli through the display of 2 primary/reactive emotions, and 2 secondary/deliberative emotions.
+
+Contribution:
+Contest 1:
+Developed a learning feature for the robot to remember where it has traveled to teach it to move to unexplored areas.Developed sensory feedback algorithm using odometry, laser, and bumper for the robot to be aware of its surroundings and take actions accordingly.Developed the overarching deliberative-reactive hybrid controller as a means to control the robot's behaviour.Contest 2:
+Implemented the feature 2D + Homography algorithm into the robot to identify known objects in the surrounding.Developed coordinate transformation matrices for the robot to identify target locations. Developed sensory feedback algorithms with odometry and laser.Contest 3:
+Implemented low level emotional state behaviours and transition trigger for entering the states.Developed laser sensory feedback algorithm.
+
+**Attachments**
+
+Youtube: https://youtu.be/cEoSNF6gpBo
+Caption: Contest 1: Exploring and mapping an unknown environment using gmapping.
+
+Filename: contest 1 architecture.PNG
+Caption: Contest 1 behaviour based controller
+
+Youtube: https://youtu.be/AlDuf2_t0_8
+Caption: Contest 2: Navigating a known environment to identify images
+
+Filename: contest 2 architecture.PNG
+Caption: Contest 2 deliberate-reactive hybrid control implemented with finite state machine architecture. 
+
+Youtube: https://youtu.be/mSlVkLuZ-wo
+Caption: Contest 3: Emotional robot
+
+Filename: contest 3 architecture.PNG
+Caption: Contest 3 behaviour based controlled implemented with finite state machine architecture. 
+
+
+

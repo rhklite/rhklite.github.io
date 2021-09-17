@@ -78,6 +78,10 @@
             <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
             <a href="">
             </a>
+            <a href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
+              target="_blank" class="has-text-white" onclick="closeNav()">
+              <strong> Curriculum Vitae </strong>
+            </a>
             <a href="#about-me" class="has-text-white" onclick="closeNav()">
               <strong> About Me </strong>
             </a>
@@ -109,6 +113,13 @@
             <div id="navMenu" class="navbar-menu">
               <div class="navbar-start">
               
+                <div class="navbar-item">
+                  <a href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
+                      target="_blank" class="has-text-white">
+                    <strong> Curriculum&nbspVitae </strong>
+                  </a>
+                </div>
+
                 <div class="navbar-item">
                   <a href="#about-me" class="has-text-white">
                     <strong> About Me </strong>
@@ -750,7 +761,7 @@
                     <img
                       class="modal-trigger"
                       data-target="project-analytics-modal"
-                      src="assets/project-4-cover.png"
+                      src="assets/data_analytics/cover_img.png"
                     />
                   </figure>
                 </article>
@@ -763,8 +774,8 @@
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-5-cover.png"
+                      data-target="project-mazebot-modal"
+                      src="assets/maze_robot/cover.jpg"
                     />
                   </figure>
                 </article>
@@ -856,7 +867,7 @@
               <ul>
                 <li>GPA (4.00/4.00)</li>
                 <li>
-                  <strong>2018 - Present</strong> University Of Toronto
+                  <strong>2018 - 2021</strong> University Of Toronto
                   Fellowship
                 </li>
               </ul>
@@ -1352,36 +1363,131 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
+          <p class="modal-card-title">Data Analytics Pipeline</p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
           <div id="project-analytics-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="assets/carousel/1.png" />
+            <figure class="image is-1by1 carousel-cell">
+              <img src="assets/data_analytics/sentiment_prediction.png" />
+            </figure>
+            <figure class="image is-1by1 carousel-cell">
+              <img src="assets/data_analytics/multi_class_prediction.png" />
             </figure>
             <figure class="image is-4by3 carousel-cell">
-              <img src="assets/carousel/2.png" />
+              <img src="assets/data_analytics/histogram.png" />
             </figure>
             <figure class="image is-4by3 carousel-cell">
-              <img src="assets/carousel/3.png" />
+              <img src="assets/data_analytics/scatter_plot.png" />
             </figure>
           </div>
 
           <div class="content">
+
+            <p class="title is-4">Data Analytics Pipeline</p>
+            <p class="subtitle is-6">
+              Course Project | <time datetime="2019-8">Aug. 2019</time>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p>
+              I built a sentiment analysis pipeline that analyzed the customer's opinion of US airlines from raw Twitter feeds using natural language processing. The pipeline achieved high accuracy of 80.9% for sentiment prediction 65% for reasoning precition and under limited data. 
             </p>
+
+            <p>
+              I also build a salary prediction pipeline for the <a href="https://www.kaggle.com/kaggle/kaggle-survey-2018/home">2018 Kaggle ML & DS Survey Challenge</a>. This pipeline used a multiple-choice questionnair to predict the salaries of data science related job.
+            </p>
+            
+            <div class="content has-text-centered">
+              <p>
+                <a
+                  href="https://github.com/rhklite/data_science_and_analytics"
+                  target="_blank"
+                  class="icon has-text-primary"
+                >
+                  <i class="fab fa-github"></i>
+                  <strong>Project&nbspLink</strong></a
+                >
+              </p>
+            </div>
+
             <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Jupyter Notebook</span>
+              <span class="tag">Data Analytics</span>
             </div>
           </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <div id="project-mazebot-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Autonomous Maze Solving Rover</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-mazebot-modal-carousel" class="carousel">
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/maze_robot/autonmous_maze_run.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">benchmark comparison</figcaption>
+            </video>
+
+            <figure class="image is-3by4 carousel-cell">
+              <img src="assets/maze_robot/bot.jpg" />
+            </figure>
+            <figure class="image is-3by4 carousel-cell">
+              <img src="assets/maze_robot/bot_cad.jpg" />
+            </figure>
+            <figure class="image is-16by9 carousel-cell">
+              <img src="assets/maze_robot/systems.jpg" />
+            </figure>
+          </div>
+
+          <div class="content">
+
+            <p class="title is-4">Autonomous Maze Solving Rover</p>
+            <p class="subtitle is-6">
+              Course Project | <time datetime="2017-9">Sep. 2017</time> - <time datetime="2017-12">Dec. 2017</time>
+            </p>
+            <p>
+              This was a 5 member team project to design an autonomous rover to find and deliver a wooden block to a randomly specified location given a random starting location. I was responsible for the navigation, localization, obstalce avoidance, bluetooth communication, and the sensor wiring and design.
+            </p>
+
+            <p>
+              The rover uses an X-holonomic drive for motion and a 2 DOF manipulator to pick up the block. An Arduino was used as the onboard microcontroller. It uses Bluetooth to communicate with a PC that uses MATLAB for ultrasound-based 2D histogram localization and A* Path planning.
+            </p>
+
+            <p>
+              The rover first randomly walks within the maze to localize itself. It then uses A* to plan a path to a predestinated pickup zone. While in the pickup zone, it uses its front-side ultrasonic sensors to search and pick the wooden block. Once picked up, the rover navigates to a randomly selected drop zone to deliver the block.
+            </p>
+
+            <p>
+              The X-holonomic drive system had the unexpected challenge of random skidding. The skidding caused significant challenges to the rover's motion control. To combat this, features such as virtual walls and real-time localization were implemented to avoid collision and reduce the effect of the skid.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Localization</span>
+              <span class="tag">Path Planning</span>
+              <span class="tag">Control</span>
+              <span class="tag">Mechanical</span>
+            </div>
+          </div>
+
         </section>
         <footer class="modal-card-foot">
           <button class="button is-success">Close</button>
