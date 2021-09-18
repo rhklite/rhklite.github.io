@@ -32,7 +32,7 @@ function toggleBurger(){
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos || currentScrollPos <=0) {
+  if (prevScrollpos > currentScrollPos || currentScrollPos <=50) {
     document.getElementById("navbar").style.top = "15px";
   } else {
     document.getElementById("navbar").style.top = "-100px";
