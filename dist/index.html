@@ -47,7 +47,7 @@
       top: -24px;
       color: #fff;
       font-size: 12pt;
-      background-color: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0,1);
       text-align: center;
     }
   
@@ -196,7 +196,7 @@
           </div>
 
 
-            <div class="column is-front has-text-centered is-center">
+            <div class="column is-front has-text-centered manually_positioned">
             <a
             
               href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
@@ -644,7 +644,7 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Spatial Constraint Generation for Self Driving</p>
-
+                  <p> &nbsp</p>
                   <figure class="image is-16by3">
                   
                     <img
@@ -716,6 +716,8 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Data-Driven Road Accident Prevention</p>
+                  <p> &nbsp</p>
+                  <p> &nbsp</p>
                   <div style="text-align: center;">
                   <figure class="image is-16by9" >
                   
@@ -757,6 +759,7 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Data Analytics Pipeline</p>
+                  <p> &nbsp</p>
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
@@ -784,13 +787,15 @@
 
               <!--pico scale turbine-->
               <div class="tile is-parent">
-                <article class="tile is-child notification">
-                  <p class="title is-4">Pico-Scale Turbine</p>
-                  <figure class="image is-4by3">
+                <article class="tile is-child notification ">
+                  <p class="title is-4">Design of Variable Turbine Guide Vane</p>
+                  <p> &nbsp</p>
+                  <p> &nbsp</p>
+                  <figure class="image is-16by9">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-6-cover.png"
+                      data-target="project-picoturbine-modal"
+                      src="assets/turbine/turbine_assembly.gif"
                     />
                   </figure>
                 </article>
@@ -813,9 +818,9 @@
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-4-cover.png"
-                    />
+                      data-target="project-turtlebot-modal"
+                      src="assets/autonomous-turtle-bot-3ixq/cover.jpg"
+                    /
                   </figure>
                 </article>
               </div>
@@ -827,8 +832,8 @@
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-6-cover.png"
+                      data-target="project-droplet-modal"
+                      src="assets/droplet-impingement/surface_ridge_tunneling.JPG"
                     />
                   </figure>
                 </article>
@@ -993,7 +998,7 @@
               <figcaption class="demo-photo-caption">iros submissions video</figcaption>
             </video>
 
-            <video autoplay width="1920" height="1080" controls>
+            <video width="1920" height="1080" controls>
               <source
                 src="assets/spatial_constraint/iros_2021_presentation-rev7_compressed.mp4"
                 type="video/mp4"
@@ -1462,7 +1467,7 @@
               Course Project | <time datetime="2017-9">Sep. 2017</time> - <time datetime="2017-12">Dec. 2017</time>
             </p>
             <p>
-              This was a 5 member team project to design an autonomous rover to find and deliver a wooden block to a randomly specified location given a random starting location. I was responsible for the navigation, localization, obstalce avoidance, bluetooth communication, and the sensor wiring and design.
+              This 5 member team project was to design an autonomous rover to find and deliver a wooden block to a location given random start. I was responsible for navigation, localization, obstacle avoidance, and sensor design and implementation.
             </p>
 
             <p>
@@ -1474,7 +1479,7 @@
             </p>
 
             <p>
-              The X-holonomic drive system had the unexpected challenge of random skidding. The skidding caused significant challenges to the rover's motion control. To combat this, features such as virtual walls and real-time localization were implemented to avoid collision and reduce the effect of the skid.
+              The X-holonomic drive system had the unexpected challenge of random skidding, which caused significant challenges to the rover's motion control. I implemented features such as virtual walls and real-time localization to avoid collision and reduce the effect of the skid.
             </p>
 
             <div class="tags">
@@ -1484,7 +1489,7 @@
               <span class="tag">Localization</span>
               <span class="tag">Path Planning</span>
               <span class="tag">Control</span>
-              <span class="tag">Mechanical</span>
+              <span class="tag">Mechanical Design</span>
             </div>
           </div>
 
@@ -1494,6 +1499,157 @@
         </footer>
       </div>
     </div>
+
+
+    <div id="project-picoturbine-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Design of Variable Turbine Guide Vane</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-picoturbine-modal-carousel" class="carousel">
+
+            <video autoplay width="1920" height="1080" controls>
+              <source
+                src="assets/turbine/turbine.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">turbine spinning</figcaption>
+            </video>
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/turbine/turbine_assembly.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+
+            <figure class="image is-16by9 carousel-cell">
+              <img src="assets/turbine/turbine assembly.JPG" />
+            </figure>
+            <figure class="image is-16by9 carousel-cell">
+              <img src="assets/turbine/120949433_2777961302526827_4218082897180676763_n.jpg" />
+            </figure>
+          </div>
+
+          <div class="content">
+
+            <p class="title is-4">Design of Variable Guide Vane Mechanism for Pico-Scale Fracis Hydro Turbine</p>
+            <p class="subtitle is-6">
+              Water and Energy Research Laboratory | <time datetime="2017-9">Jan. 2018</time> - <time datetime="2017-12">Sep. 2018</time>
+            </p>
+            <p>
+              This project was a collaboration with a Toronto-based start-up company as a part of a larger effort to develop an energy harvester for a self-powered, inline water disinfection system to provide safe drinking water and electricity to remote communities.
+            </p>
+
+            <p>
+              I developed a design of a variable guide vane mechanism for a palm-sized hydro Francis turbine. It can replace the conventional pressure control valve by regulating the pressure with a set of variable guide vanes and harness the energy from the hydraulic head that is overwise lost with a conventional pressure control valve. 
+            </p>
+
+            <p>
+              The guide vanes regulate the fluid flow by reducing the flow's cross-sectional area and changing its angle of attack to the turbine blades. The guide vanes are actuated via a set of levers and pivot pints connected to a guide ring. A stepper motor with a high reduction ratio gearbox is controlled by an Arduino to rotate the guide ring. A pressurized pipe flow rig was developed in collaboration with another master student to demonstrate the feasibility of the design.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">FEA</span>
+              <span class="tag">Machining</span>
+              <span class="tag">Fluid Dynamics</span>
+              <span class="tag">Mechanical Design</span>
+            </div>
+          </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <div id="project-turtlebot-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Autonmous Turtlebot</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-turtlebot-modal-carousel" class="carousel">
+          
+
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/autonomous-turtle-bot-3ixq/contest1.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/autonomous-turtle-bot-3ixq/contest2.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/autonomous-turtle-bot-3ixq/contest3.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+          
+          </div>
+          <div class="content">
+
+            <p class="title is-4">Autonmous Turtlebot</p>
+            <p class="subtitle is-6">
+              Course Project | <time datetime="2017-9">Sep. 2017</time> - <time datetime="2017-12">Dec. 2017</time>
+            </p>
+            <p>
+              This was a 5 member project that consists of 3 contests implmented under the ROS framework.
+            </p>
+
+            <p class="title is-6">Contest 1: Autonomous Mapping and Exploration of an Unknown Environment</p>
+            <p>
+              The objective was to autonmously explore an unknown environment and use GMapping to map the explored area. I developed the motion control and a random walk based exploration strategy that employed a odometry based memory to reduce repeat visits.
+            </p>
+
+            <p class="title is-6">Contest 2: Finding Objects of Interest in an Environment</p>
+            <p>
+              The objective was to navigate the robot to a box object and match the known image on the box using OpenCV. I implemented the feature 2D + Homography algorithm with lowe's ratio test to compute the bounding box area of the image detected from the robot camera to match against the image database.
+            </p>
+
+            <p class="title is-6">Contest 3: Follow Me TurtleBot Companion</p>
+            <p>
+              The objective was to develop a social companion robotthat exhibits emotional responses to external stimuli. I implemented low level emotional state behaviors and their respective transition triggers.
+            </p>
+
+
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">ROS</span>
+              <span class="tag">Path Planning</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
 
     <div id="blank_project" class="modal">
       <div class="modal-background"></div>

@@ -4,6 +4,7 @@ portfolio
 - do not add the assets to lfs, it won't render properly on the webpage.
 - there is are some manual changes made to the [`main.bundle.css`](dist/css/main.bundle.css). Please keep it to avoid missing/bad assets.
 - view [`index.html`](dist/index.html) locally in the browser 
+- don't do autoplay if there is a video with audio
 
 ## Useful Commands
 
@@ -17,3 +18,5 @@ portfolio
 - [RAL Keywords](https://www.ieee-ras.org/publications/ra-l/ra-letters-information-for-authors/184-publications/ra-letters/629-ra-l-keywords#subject)
 
 ## TODO
+
+- [ ] add carousal fig caption
