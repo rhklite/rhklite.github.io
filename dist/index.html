@@ -42,12 +42,9 @@
 
     .img-caption {
       position: relative;
-      height: 0px;
-      width: 180px;
-      top: -24px;
       color: #fff;
       font-size: 12pt;
-      background-color: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0,0.5);
       text-align: center;
     }
   
@@ -77,6 +74,10 @@
           <div class="sidenav" id="mySidenav">
             <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
             <a href="">
+            </a>
+            <a href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
+              target="_blank" class="has-text-white" onclick="closeNav()">
+              <strong> Curriculum Vitae </strong>
             </a>
             <a href="#about-me" class="has-text-white" onclick="closeNav()">
               <strong> About Me </strong>
@@ -109,6 +110,13 @@
             <div id="navMenu" class="navbar-menu">
               <div class="navbar-start">
               
+                <div class="navbar-item">
+                  <a href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
+                      target="_blank" class="has-text-white">
+                    <strong> Curriculum&nbspVitae </strong>
+                  </a>
+                </div>
+
                 <div class="navbar-item">
                   <a href="#about-me" class="has-text-white">
                     <strong> About Me </strong>
@@ -185,7 +193,7 @@
           </div>
 
 
-            <div class="column is-front has-text-centered is-center">
+            <div class="column is-front has-text-centered manually_positioned">
             <a
             
               href="https://nbviewer.jupyter.org/github/rhklite/resume/blob/master/cv.pdf"
@@ -397,7 +405,7 @@
                 <span class="tag">Constrained Motion Planning</span>
                 <span class="tag">Research</span>
                 <span class="tag">Patent</span>
-                <span class="tag">IROS</span>
+                <span class="tag">Publication</span>
               </div>
             </div>
           </div>
@@ -633,7 +641,7 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Spatial Constraint Generation for Self Driving</p>
-
+                  <p> &nbsp</p>
                   <figure class="image is-16by3">
                   
                     <img
@@ -705,6 +713,8 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Data-Driven Road Accident Prevention</p>
+                  <p> &nbsp</p>
+                  <p> &nbsp</p>
                   <div style="text-align: center;">
                   <figure class="image is-16by9" >
                   
@@ -746,11 +756,12 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification">
                   <p class="title is-4">Data Analytics Pipeline</p>
+                  <p> &nbsp</p>
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
                       data-target="project-analytics-modal"
-                      src="assets/project-4-cover.png"
+                      src="assets/data_analytics/cover_img.png"
                     />
                   </figure>
                 </article>
@@ -763,8 +774,8 @@
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-5-cover.png"
+                      data-target="project-mazebot-modal"
+                      src="assets/maze_robot/cover.jpg"
                     />
                   </figure>
                 </article>
@@ -773,13 +784,15 @@
 
               <!--pico scale turbine-->
               <div class="tile is-parent">
-                <article class="tile is-child notification">
-                  <p class="title is-4">Pico-Scale Turbine</p>
-                  <figure class="image is-4by3">
+                <article class="tile is-child notification ">
+                  <p class="title is-4">Design of Variable Turbine Guide Vane</p>
+                  <p> &nbsp</p>
+                  <p> &nbsp</p>
+                  <figure class="image is-16by9">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-6-cover.png"
+                      data-target="project-picoturbine-modal"
+                      src="assets/turbine/turbine_assembly.gif"
                     />
                   </figure>
                 </article>
@@ -802,9 +815,9 @@
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-4-cover.png"
-                    />
+                      data-target="project-turtlebot-modal"
+                      src="assets/autonomous-turtle-bot-3ixq/cover.jpg"
+                    /
                   </figure>
                 </article>
               </div>
@@ -816,8 +829,8 @@
                   <figure class="image is-4by3">
                     <img
                       class="modal-trigger"
-                      data-target="blank_project"
-                      src="assets/project-6-cover.png"
+                      data-target="project-droplet-modal"
+                      src="assets/droplet-impingement/cover2.jpg"
                     />
                   </figure>
                 </article>
@@ -856,7 +869,7 @@
               <ul>
                 <li>GPA (4.00/4.00)</li>
                 <li>
-                  <strong>2018 - Present</strong> University Of Toronto
+                  <strong>2018 - 2021</strong> University Of Toronto
                   Fellowship
                 </li>
               </ul>
@@ -982,7 +995,7 @@
               <figcaption class="demo-photo-caption">iros submissions video</figcaption>
             </video>
 
-            <video autoplay width="1920" height="1080" controls>
+            <video width="1920" height="1080" controls>
               <source
                 src="assets/spatial_constraint/iros_2021_presentation-rev7_compressed.mp4"
                 type="video/mp4"
@@ -1060,7 +1073,7 @@
                 src="assets/drl_rough_terrain_nav/benchmark.mp4"
                 type="video/mp4"
               />
-              <figcaption class="demo-photo-caption">benchmark comparison</figcaption>
+              <figcaption class="img-caption">Benchmark Comparison</figcaption>
             </video>
 
             <figure class="image is-4by3 carousel-cell">
@@ -1076,7 +1089,7 @@
                 src="assets/drl_rough_terrain_nav/software_diagram.png"
                 alt="alternate text"
               />
-              <figcaption class="img-caption">Software Architecture</figcaption>
+              <figcaption class="img-caption">Software architecture of Jaguar 4x4</figcaption>
             </figure>
 
             <figure class="image is-16by9 carousel-cell">
@@ -1084,7 +1097,7 @@
                 src="assets/drl_rough_terrain_nav/hardware_diagram.png"
                 alt="alternate text"
               />
-              <figcaption class="img-caption">Hardware Configuration</figcaption>
+              <figcaption class="img-caption">Hardware Architecture of Jaguar 4x4</figcaption>
             </figure>
 
 
@@ -1164,9 +1177,11 @@
           <div id="project-2-modal-carousel" class="carousel">
             <figure class="image is-16by9 carousel-cell">
               <img src="assets/parallel_ppo/LunarLander-v2.gif" />
+              <figcaption class="img-caption">LunarLander-v2 trained in 1500 episodes, Runtime: 9min 25s</figcaption>
             </figure>
             <figure class="image is-16by9 carousel-cell">
               <img src="assets/parallel_ppo/CartPole-v1.gif" />
+              <figcaption class="img-caption">CartPole-v1 trained in 500 episodes, Runtime: 48s</figcaption>
             </figure>
           </div>
 
@@ -1224,9 +1239,11 @@
           <div id="project-3-modal-carousel" class="carousel">
             <figure class="image is-16by9 carousel-cell">
               <img src="assets/apprenticeship_RL/tabular_q.gif" />
+              <figcaption class="img-caption">Expert Policy vs Apprenticeship RL Student 0, 2, 9</figcaption>
             </figure>
             <figure class="image is-16by9 carousel-cell">
               <img src="assets/apprenticeship_RL/tabular_q.png" />
+              <figcaption class="img-caption">Apprenticeship RL Student Progression</figcaption>
             </figure>
           </div>
 
@@ -1285,14 +1302,17 @@
         </header>
         <section class="modal-card-body">
           <div id="project-4-modal-carousel" class="carousel">
-            <figure class="image is-16by9 carousel-cell">
+            <figure class="image carousel-cell">
               <img src="assets/toward_smart_city/application.png" />
+              <figcaption class="img-caption">DriveAlive Application Example</figcaption>
             </figure>
-            <figure class="image is-16by9 carousel-cell">
+            <figure class="image carousel-cell">
               <img src="assets/toward_smart_city/process.png" />
+              <figcaption class="img-caption">DriveAlive Data Pipeline</figcaption>
             </figure>
-            <figure class="image is-16by9 carousel-cell">
+            <figure class="image carousel-cell">
               <img src="assets/toward_smart_city/result.png" />
+              <figcaption class="img-caption">DriveAlive Performance</figcaption>
             </figure>
           </div>
 
@@ -1352,36 +1372,431 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
+          <p class="modal-card-title">Data Analytics Pipeline</p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
           <div id="project-analytics-modal-carousel" class="carousel">
-            <figure class="image is-4by3 carousel-cell">
-              <img src="assets/carousel/1.png" />
+            <figure class="image carousel-cell">
+              <img src="assets/data_analytics/sentiment_prediction.png" />
+              <figcaption class="img-caption">Airline Sentiment Binary Prediction Result</figcaption>
+            </figure>
+            <figure class="image carousel-cell">
+              <img src="assets/data_analytics/multi_class_prediction.png" />
+              <figcaption class="img-caption">Airline Negative Sentiment Reasoning Prediction vs. Ground Truth Matrix</figcaption>
             </figure>
             <figure class="image is-4by3 carousel-cell">
-              <img src="assets/carousel/2.png" />
+              <img src="assets/data_analytics/histogram.png" />
+              <figcaption class="img-caption">Salary Prediction vs. Ground Truth Histogram</figcaption>
             </figure>
             <figure class="image is-4by3 carousel-cell">
-              <img src="assets/carousel/3.png" />
+              <img src="assets/data_analytics/scatter_plot.png" />
+              <figcaption class="img-caption">Salary Prediction vs. Ground Truth Scatterplot</figcaption>
             </figure>
           </div>
 
           <div class="content">
+
+            <p class="title is-4">Data Analytics Pipeline</p>
+            <p class="subtitle is-6">
+              Course Project | <time datetime="2019-8">Aug. 2019</time>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p>
+              I built a sentiment analysis pipeline that analyzed the customer's opinion of US airlines from raw Twitter feeds using natural language processing. The pipeline achieved high accuracy of 80.9% for sentiment prediction 65% for reasoning precition and under limited data. 
             </p>
+
+            <p>
+              I also build a salary prediction pipeline for the <a href="https://www.kaggle.com/kaggle/kaggle-survey-2018/home">2018 Kaggle ML & DS Survey Challenge</a>. This pipeline used a multiple-choice questionnair to predict the salaries of data science related job.
+            </p>
+            
+            <div class="content has-text-centered">
+              <p>
+                <a
+                  href="https://github.com/rhklite/data_science_and_analytics"
+                  target="_blank"
+                  class="icon has-text-primary"
+                >
+                  <i class="fab fa-github"></i>
+                  <strong>Project&nbspLink</strong></a
+                >
+              </p>
+            </div>
+
             <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Jupyter Notebook</span>
+              <span class="tag">Data Analytics</span>
             </div>
           </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <div id="project-mazebot-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Autonomous Maze Solving Rover</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-mazebot-modal-carousel" class="carousel">
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/maze_robot/autonmous_maze_run.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">benchmark comparison</figcaption>
+            </video>
+
+            <figure class="image carousel-cell">
+              <img src="assets/maze_robot/bot.jpg" />
+              <figcaption class="img-caption">Maze Robot</figcaption>
+            </figure>
+            <figure class="image carousel-cell">
+              <img src="assets/maze_robot/bot_cad.jpg" />
+              <figcaption class="img-caption">Maze Robot CAD</figcaption>
+            </figure>
+            <figure class="image carousel-cell">
+              <img src="assets/maze_robot/systems.jpg" />
+              <figcaption class="img-caption">Robot Architecture</figcaption>
+            </figure>
+          </div>
+
+          <div class="content">
+
+            <p class="title is-4">Autonomous Maze Solving Rover</p>
+            <p class="subtitle is-6">
+              Course Project | <time datetime="2017-9">Sep. 2017</time> - <time datetime="2017-12">Dec. 2017</time>
+            </p>
+            <p>
+              This 5 member team project was to design an autonomous rover to find and deliver a wooden block to a location given random start. I was responsible for navigation, localization, obstacle avoidance, and sensor design and implementation.
+            </p>
+
+            <p>
+              The rover uses an X-holonomic drive for motion and a 2 DOF manipulator to pick up the block. An Arduino was used as the onboard microcontroller. It uses Bluetooth to communicate with a PC that uses MATLAB for ultrasound-based 2D histogram localization and A* Path planning.
+            </p>
+
+            <p>
+              The rover first randomly walks within the maze to localize itself. It then uses A* to plan a path to a predestinated pickup zone. While in the pickup zone, it uses its front-side ultrasonic sensors to search and pick the wooden block. Once picked up, the rover navigates to a randomly selected drop zone to deliver the block.
+            </p>
+
+            <p>
+              The X-holonomic drive system had the unexpected challenge of random skidding, which caused significant challenges to the rover's motion control. I implemented features such as virtual walls and real-time localization to avoid collision and reduce the effect of the skid.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Localization</span>
+              <span class="tag">Path Planning</span>
+              <span class="tag">Control</span>
+              <span class="tag">Mechanical Design</span>
+            </div>
+          </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <div id="project-picoturbine-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Design of Variable Turbine Guide Vane</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-picoturbine-modal-carousel" class="carousel">
+
+            <video autoplay width="1920" height="1080" controls>
+              <source
+                src="assets/turbine/turbine.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">turbine spinning</figcaption>
+            </video>
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/turbine/turbine_assembly.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+
+            <figure class="image is-16by9 carousel-cell">
+              <img src="assets/turbine/turbine assembly.JPG" />
+              <figcaption class="img-caption">Turbine Exploded View</figcaption>
+            </figure>
+            <figure class="image is-16by9 carousel-cell">
+              <img src="assets/turbine/120949433_2777961302526827_4218082897180676763_n.jpg" />
+              <figcaption class="img-caption">Pressurized Pipeflow Experiment Rig</figcaption>
+            </figure>
+
+            <figure class="image is-4by3 carousel-cell">
+              <img src="assets/turbine/20210919_123056.jpg" />
+              <figcaption class="img-caption">2018 CFD Canada Conference Poster</figcaption>
+            </figure>
+
+            <figure class="image is-4by3 carousel-cell">
+              <img src="assets/turbine/120602084_3165100983618367_7122439041750625786_n.jpg" />
+              <figcaption class="img-caption">2018 CFD Canada Conference Award</figcaption>
+            </figure>
+          </div>
+
+          <div class="content">
+
+            <p class="title is-4">Design of Variable Guide Vane Mechanism for Pico-Scale Fracis Hydro Turbine</p>
+            <p class="subtitle is-6">
+              Water and Energy Research Laboratory | <time datetime="2017-9">Jan. 2018</time> - <time datetime="2017-12">Sep. 2018</time>
+            </p>
+            <p>
+              This project was a collaboration with a Toronto-based start-up company as a part of a larger effort to develop an energy harvester for a self-powered, inline water disinfection system to provide safe drinking water and electricity to remote communities.
+            </p>
+
+            <p>
+              I developed a design of a variable guide vane mechanism for a palm-sized hydro Francis turbine. It can replace the conventional pressure control valve by regulating the pressure with a set of variable guide vanes and harness the energy from the hydraulic head that is overwise lost with a conventional pressure control valve. 
+            </p>
+
+            <p>
+              The guide vanes regulate the fluid flow by reducing the flow's cross-sectional area and changing its angle of attack to the turbine blades. The guide vanes are actuated via a set of levers and pivot pints connected to a guide ring. A stepper motor with a high reduction ratio gearbox is controlled by an Arduino to rotate the guide ring. A pressurized pipe flow rig was developed in collaboration with two other master students to demonstrate the feasibility of the design.
+            </p>
+
+            <p>
+            This research won the 1st place undergraduate poster in the 2018 Computational Fluid Dynamics Society of Canada conference. 
+            </p>
+
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">FEA</span>
+              <span class="tag">Machining</span>
+              <span class="tag">Fluid Dynamics</span>
+              <span class="tag">Mechanical Design</span>
+            </div>
+          </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <div id="project-turtlebot-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Autonmous Turtlebot</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-turtlebot-modal-carousel" class="carousel">
+          
+
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/autonomous-turtle-bot-3ixq/contest1.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/autonomous-turtle-bot-3ixq/contest2.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+
+            <video autoplay muted width="1920" height="1080" controls>
+              <source
+                src="assets/autonomous-turtle-bot-3ixq/contest3.mp4"
+                type="video/mp4"
+              />
+              <figcaption class="demo-photo-caption">assembly</figcaption>
+            </video>
+          
+          </div>
+          <div class="content">
+
+            <p class="title is-4">Autonmous Turtlebot</p>
+            <p class="subtitle is-6">
+              Course Project | <time datetime="2017-9">Sep. 2017</time> - <time datetime="2017-12">Dec. 2017</time>
+            </p>
+            <p>
+              This was a 5 member project that consists of 3 contests implmented under the ROS framework.
+            </p>
+
+            <p class="title is-6">Contest 1: Autonomous Mapping and Exploration of an Unknown Environment</p>
+            <p>
+              The objective was to autonmously explore an unknown environment and use GMapping to map the explored area. I developed the motion control and a random walk based exploration strategy that employed a odometry based memory to reduce repeat visits.
+            </p>
+
+            <p class="title is-6">Contest 2: Finding Objects of Interest in an Environment</p>
+            <p>
+              The objective was to navigate the robot to a box object and match the known image on the box using OpenCV. I implemented the feature 2D + Homography algorithm with lowe's ratio test to compute the bounding box area of the image detected from the robot camera to match against the image database.
+            </p>
+
+            <p class="title is-6">Contest 3: Follow Me TurtleBot Companion</p>
+            <p>
+              The objective was to develop a social companion robotthat exhibits emotional responses to external stimuli. I implemented low level emotional state behaviors and their respective transition triggers.
+            </p>
+
+
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">ROS</span>
+              <span class="tag">Path Planning</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+
+    <div id="project-droplet-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Droplet Impingement</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div id="project-droplet-modal-carousel" class="carousel">
+          
+          
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/DSC_1665.JPG" />
+              <figcaption class="img-caption">Experiment Rig</figcaption>
+            </figure>
+            
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Explosive.JPG" />
+              <figcaption class="img-caption">Explosive</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Flatten_Bag.JPG" />
+              <figcaption class="img-caption">Flattened Bag</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Laminar_Bag.JPG" />
+              <figcaption class="img-caption">Laminar Flow Induced Bag</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Partial_Bag.JPG" />
+              <figcaption class="img-caption">Partial Bag Formation</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Shear_due_to_Impingement.JPG" />
+              <figcaption class="img-caption">Impingement Induced Shear</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Slowly_Expanding_Bag.JPG" />
+              <figcaption class="img-caption">Slow Expansion</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Surface_Ridge_&_Tunneling.JPG" />
+              <figcaption class="img-caption">Surface Ridge and Tunneling</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Tunneling_&_Impact_Wave.JPG" />
+              <figcaption class="img-caption">Tunneling and Impact Wave</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Tunneling.JPG" />
+              <figcaption class="img-caption">Tunneling</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Turbulent_Bag_1.JPG" />
+              <figcaption class="img-caption">Large Turbulent Flow Induced Bag</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Turbulent_Bag_2.JPG" />
+              <figcaption class="img-caption">Small Turbulent Flow Induced Bag</figcaption>
+            </figure>
+
+            <figure class="image carousel-cell">
+              <img src="assets/droplet-impingement/Turbulent_Tunneling.JPG" />
+              <figcaption class="img-caption">Turbulent Flow Induced Tunneling</figcaption>
+            </figure>
+
+          </div>
+          <div class="content">
+
+            <p class="title is-4">Droplet Impingement</p>
+            <p class="subtitle is-6">
+              Multiphase Flow and Spray Systems Lab | <time datetime="2018-1">May. 2016</time> - <time datetime="2017-9">Aug. 2017</time>
+            </p>
+
+            <p>
+              This research studied the droplet shattering pattern under impingement by an air jet to disover new methods of atomization for spray technologies. It has applications in spray and atomization, aircraft engine propulsion, and fuel jet injection.
+            </p>
+
+            <p>
+            This research analyzed the droplet's shatter pattern under varying jet velocity, nozzel diameter, droplet diameter, droplet viscosity, and impact location.
+            </p>
+
+            <p>
+            13 droplet shattering pattern were discovered and classified.
+            </p>
+
+            <!--
+            <div class="content has-text-centered">
+              <p>
+                <a
+                  class="icon has-text-primary"
+                  onclick="downloadDropletPhotos()"
+                >
+                  <i class="fab fa-github"></i>
+                  <strong>Download&nbspHigh&nbspRes&nbspPhotos</strong></a
+                >
+              </p>
+            </div>
+            -->
+            
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">Fluid Mechanics</span>
+              <span class="tag">Mechanical Design</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+
         </section>
         <footer class="modal-card-foot">
           <button class="button is-success">Close</button>

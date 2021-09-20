@@ -16,7 +16,7 @@ function openNav() {
     } else{
         toggleBurger();
         sideBarOpen = true;
-        document.getElementById("mySidenav").style.height = "260px";
+        document.getElementById("mySidenav").style.height = "290px";
         document.getElementById("burger").toggleAttribute('is-active');
         document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
     }

@@ -1,0 +1,1 @@
+for i in *.JPG; do ffmpeg -i "$i" -vf scale=3840:-1 "${i%.*}.JPG"; done

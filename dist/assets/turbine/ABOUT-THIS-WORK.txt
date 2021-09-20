@@ -1,0 +1,36 @@
+Title: Design of Variable Guide Vane Mechanism for Pico-Scale Fracis Hydro Turbine
+
+Description:
+Project DescriptionThis is a 3.5 month thesis under University of Toronto Water and Energy Research Lab (WERL) from January 2018 to April 2018. It is in collaboration with a Toronto based company as part of a larger effort to develop an energy harvester for a self-powered, inline water disinfection system for pico-scale applications to provide safe drinking water and electricity to remote communities.
+
+This thesis presents a novel
+design of a variable guide vane mechanism as a pressure control mechanism for a pico-scale hydro Francis
+turbine. The proposed design can replace
+the conventional pressure control valve by regulating pressure with a set of
+variable guide vanes and and harness the energy from the hydraulic head that is
+otherwise lost with a conventional pressure control valve. The guide vanes
+(sometimes referred to as wicket gates) are used for flow regulation
+over incoming or outgoing fluids by reducing the flow cross sectional area and
+changing the turbine runner’s angle of attack. This design uses a
+guide ring to synchronously rotate the guide vanes through a set of levers and
+pivot pins. A stepper motor with a high reduction ratio gear box is employed as the guide vane actuator.
+
+Contribution:
+This was an individual project.
+
+**Attachments**
+
+Youtube: https://youtu.be/qd8Sb0Kx4sc
+Caption: Final design exploded assembly video. Turbine geometry in video altered to protect intellectual property.
+
+Filename: turbine assembly.JPG
+Caption: Final design exploded assembly. Turbine geometry in video altered to protect intellectual property.
+
+Filename: design.PNG
+Caption: Final design; operation mechanism components. Turbine geometry in video altered to protect intellectual property.
+
+Filename: circuit.PNG
+Caption: Final design; actuation mechanism driver circuit.
+
+
+
