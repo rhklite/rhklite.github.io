@@ -84,15 +84,18 @@
               <strong> About Me </strong>
             </a>
             <a href="#experience" class="has-text-white" onclick="closeNav()">
-              <strong> Experience </strong>
+              <strong> Experiences </strong>
+            </a>
+            <a href="#publications" class="has-text-white" onclick="closeNav()">
+              <strong> Publications </strong>
             </a>
             
             <a href="#projects" class="has-text-white" onclick="closeNav()">
-              <strong> Project </strong>
+              <strong> Projects </strong>
             </a>
             
             <a href="#education" class="has-text-white" onclick="closeNav()">
-              <strong> Education </strong>
+              <strong> Educations </strong>
             </a>
           
             <a href="#contact" class="has-text-white" onclick="closeNav()">
@@ -126,13 +129,19 @@
 
                 <div class="navbar-item">
                   <a href="#experience" class="has-text-white">
-                    <strong> Experience </strong>
+                    <strong> Experiences </strong>
+                  </a>
+                </div>
+
+                <div class="navbar-item">
+                  <a href="#publications" class="has-text-white">
+                    <strong> Publications </strong>
                   </a>
                 </div>
 
                 <div class="navbar-item">
                   <a href="#projects" class="has-text-white">
-                    <strong> Project </strong>
+                    <strong> Projects </strong>
                   </a>
                 </div>
 
@@ -251,10 +260,13 @@
               </p>
               <ul>
                 <li>
-                  <strong>Deep Learning</strong> Developed and published a novel sim-to-real transfer pipeline for robot navigation in Pytorch, achieved 87% real world success rate given a 90% simulation success rate
+                  <strong>Deep Learning</strong> Led the development and <strong>published</strong> a novel sim-to-real transfer pipeline for rough terrain navigation in Pytorch
                 </li>
                 <li>
-                  <strong>Development</strong> Developed a ROS based decentralized software and hardware robot architecture using C++ and Python
+                  <strong>Sim-to-Real</strong> Researched, designed, and implemented a high fidelity Gazebo simulator and domain randomization
+                </li>
+                <li>
+                  <strong>Development</strong> Developed a decentralized software and hardware robot architecture using ROS, C++, and Python
                 </li>
                 <li>
                   <strong>Localization</strong> Implemented LiDAR and visual SLAM on a mobile robot for real time pose estimation
@@ -263,7 +275,10 @@
                   <strong>Control</strong> Designed and optimized a cascade PID controller for global position and wheel control in rough terrain
                 </li>
                 <li>
-                  <strong>Analysis</strong> Analyzed the pipeline with autonomous navigation experiments, comparison studies, and ablation studies
+                  <strong>Analysis</strong> Led real-world navigation, comparison, and ablation experiments to demonstrate that the pipeline achieved 87% real world success rate given a 90% simulation success rate; up to 72% increase against existing methods
+                </li>
+                <li>
+                  <strong>Hardware</strong> Enhanced a robot with auxilliary computing units and sensors with components designed using SolidWorks
                 </li>
               </ul>
 
@@ -306,6 +321,8 @@
 
               <!--skill tags-->
               <div class="tags">
+                <span class="tag">Published in RAL</span>
+                <span class="tag">Published in IROS2021</span>
                 <span class="tag">ROS</span>
                 <span class="tag">C++</span>
                 <span class="tag">Python</span>
@@ -315,7 +332,6 @@
                 <span class="tag">Control</span>
                 <span class="tag">Reinforcement Learning</span>
                 <span class="tag">Research</span>
-                <span class="tag">Publication</span>
               </div>
 
 
@@ -352,10 +368,16 @@
               </p>
               <ul>
                 <li>
-                  <strong>Path Planning</strong> Developed, published, and patented a novel spatial constraint generation algorithm for autonomous driving in python
+                  <strong>Path Planning</strong> Developed, <strong>published</strong>, and <strong>patented</strong> a Delaunay Triangulation based spatial constraint generation algorithm for mapless autonomous vehicle navigation in a dynamic environment
                 </li>
                 <li>
-                  <strong>Simulation</strong> Engaged in an autonomous driving simulator development using real-world datasets
+                  <strong>Development</strong> Implemented a Python based path planning simulator and the algorithm's modules for fast development iterations
+                </li>
+                <li>
+                  <strong>Algorithms</strong> Implemented Hybrid A* and Funnel algorithm for path planning in triangulation meshiterations
+                </li>
+                <li>
+                  <strong>Simulation</strong>  Engaged in simulator development using CARLA by automating map generation process from real-world datasets
                 </li>
               </ul>
               
@@ -363,7 +385,7 @@
               <div class="content has-text-centered">
                 <p>
                   <a
-                    href="assets/spatial_constraint/IROS21_1355_FI.pdf"
+                    href="https://arxiv.org/pdf/2110.14786.pdf"
                     target="_blank"
                     class="icon has-text-primary"
                   >
@@ -372,11 +394,11 @@
 
                   <span style="padding-left:75px"/>
                   <a
-                    href="assets/spatial_constraint/iros_2021_presentation-rev7_compressed.mp4"
+                    href="assets/spatial_constraint/icra_2021_rev3.mp4"
                     target="_blank"
                     class="icon has-text-primary"
                   >
-                    <i class="fa fa-video" aria-hidden="true"></i><strong>IROS&nbspVideo</strong>
+                    <i class="fa fa-video" aria-hidden="true"></i><strong>Video</strong>
                   </a>
 
                   <!--links
@@ -393,11 +415,11 @@
               </div>
 
               <div class="tags">
+                <span class="tag">Published in IROS2021</span>
+                <span class="tag">Patented</span>
                 <span class="tag">Python</span>
                 <span class="tag">Constrained Motion Planning</span>
                 <span class="tag">Research</span>
-                <span class="tag">Patent</span>
-                <span class="tag">Publication</span>
               </div>
             </div>
           </div>
@@ -616,6 +638,138 @@
           </div>
         </div>
       </div>
+    </section>
+
+
+    <a id="publications"></a>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Publications</h1>
+        <hr />
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+              </div>
+              <div class="media-content">
+                <p class="title is-4">A Sim-to-Real Pipeline for Deep Reinforcement Learning Autonomous Navigation in Cluttered Rough Terrain</p>
+                <p class="subtitle is-6">
+                  <strong>Hu. H</strong>, Kaicheng Zhang, Aaron Hao Tan, Michael Ruan, Christopher Agia, and Goldie Nejat
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>IEEE Robotics and Automation Letters (<strong>RAL</strong>), vol. 6, no. 4, pp. 6569-6576, Oct. 2021, doi: 10.1109/LRA.2021.3093551.
+                </li>
+                <li>Accepted into International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2021
+                </li>
+                <li>Proposed a pipeline to transfer challenging rough terrain navigation policy from simulation to the real-world using high fidelity simulation, abstract observation space, and domain randomization
+                </li>
+                <li>The pipeline acheived a 87% real world navigation success rate given a 90% simulation success rate
+                </li>
+                <li>The pipline has up to 72% increase in navigation success along with a faster travel time and shorter distance against existing methods
+                </li>
+              </ul>
+            </div>
+            
+
+
+              <!--paper link-->
+              <div class="content has-text-centered">
+              <p>
+                <a
+                  href="http://asblab.mie.utoronto.ca/sites/default/files/A%20Sim-to-Real%20Pipeline%20for%20Deep%20Reinforcement%20Learning%20for%20Autonomous%20Robot%20Navigation%20in%20CLuttered%20Rough%20Terrain%202021_0.pdf"
+                  target="_blank"
+                  class="icon has-text-primary"
+                >
+                  <i class="fa fa-file-pdf-o" aria-hidden="true"></i><strong>Paper</strong>
+                </a>
+
+                <span style="padding-left:75px"/> <!--add space between links-->
+
+                <a
+                  href="assets/drl_rough_terrain_nav/iros2021.mp4"
+                  target="_blank"
+                  class="icon has-text-primary"
+                >
+                  <i class="fas fa-video" aria-hidden="true"></i><strong>RAL&nbspVideo</strong>
+                </a>
+              </p>
+            </div>
+            <div class="tags">
+              <span class="tag">Published on RAL</span>
+              <span class="tag">Published on IROS2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Spatial Constraint Generation for Motion Planning in Dynamic Environments</p>
+                <p class="subtitle is-6">
+                  <strong>Hu. H</strong>, Peyman Yadmellat
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>Accepted into International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2021
+                </li>
+                <li>Patented by Huawei, Provisional Patent Application Number: 63/108,348
+                </li>
+                <li>Proposed to generate spatial constraint using triangulation mesh for long-term mapless path planning in a dynamic environment
+                </li>
+                <li>Overcame the static triangulation mesh assumption and the object masking issue that existing methods have
+                </li>
+                <li>Achieved up to 18% increase in navigation success rate and up to 28% increase in valid plans compared to existing methods
+                </li>
+              </ul>
+            </div>
+
+
+              <div class="content has-text-centered">
+                <p>
+                  <a
+                    href="https://arxiv.org/pdf/2110.14786.pdf"
+                    target="_blank"
+                    class="icon has-text-primary"
+                  >
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i><strong>Paper</strong>
+                  </a>
+
+                  <span style="padding-left:75px"/>
+                  <a
+                    href="assets/spatial_constraint/icra_2021_rev3.mp4"
+                    target="_blank"
+                    class="icon has-text-primary"
+                  >
+                    <i class="fa fa-video" aria-hidden="true"></i><strong>Video</strong>
+                  </a>
+
+                  <!--links
+                  <span style="padding-left:75px"/>
+
+                  <a
+                    href=""
+                    target="_blank"
+                    class="icon has-text-primary"
+                  >
+                    <i class="fas fa-parking" aria-hidden="true"></i><strong>Patent</strong>
+                  </a>-->
+                </p>
+              </div>
+
+            <div class="tags">
+              <span class="tag">Published in IROS2021</span>
+              <span class="tag">Patented</span>
+            </div>
+          </div>
+        </div>
     </section>
 
     <!--Projects-->
@@ -981,12 +1135,13 @@
 
             <video autoplay muted width="1920" height="1080" controls>
               <source
-                src="assets/spatial_constraint/IROS21_1355_VI_fi.mp4"
+                src="assets/spatial_constraint/icra_2021_rev3.mp4"
                 type="video/mp4"
               />
               <figcaption class="demo-photo-caption">iros submissions video</figcaption>
             </video>
 
+            <!--
             <video width="1920" height="1080" controls>
               <source
                 src="assets/spatial_constraint/iros_2021_presentation-rev7_compressed.mp4"
@@ -994,6 +1149,7 @@
               />
               <figcaption class="demo-photo-caption">IROS presentation video</figcaption>
             </video>
+            -->
           </div>
 
           <div class="content">
